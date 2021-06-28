@@ -1,4 +1,4 @@
-export let NatoAlphabet = {
+export var NatoAlphabet = {
 	"a": "Alpha",
 	"b": "Bravo",
 	"c": "Charlie",
