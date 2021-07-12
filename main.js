@@ -25,8 +25,18 @@ var NatoAlphabet = {
 	"w": "Wiskey",
 	"x": "X-ray",
 	"y": "Yankee",
-	"z": "Zulu"
-  };
+	"z": "Zulu",
+	"1": "One",
+	"2": "Two",
+	"3": "Three",
+	"4": "Four",
+	"5": "Five",
+	"6": "Six",
+	"7": "Seven",
+	"8": "Eight",
+	"9": "Nine",
+	"0": "Zero",
+}
 
 var textToTranscribe = "";
 var transcribedOutput = document.getElementById("transcribedOutput");
@@ -47,7 +57,7 @@ function convertStringToArray(){
 
 function transcribeChar(index){
 	if(index == " "){
-		transcribedOutput.innerHTML += "<br>";
+		transcribedOutput.innerHTML += "SPACE <br>";
 	}else{
 		transcribedOutput.innerHTML += index.toUpperCase() + " as in " + "<b>" 
 										+ NatoAlphabet[index.toLowerCase()] + "</b>" +"<br>";
