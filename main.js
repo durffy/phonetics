@@ -89,11 +89,16 @@ function convertStringToArray(){
 }
 
 function transcribeChar(index){
+	
 	if(index == " "){
-		transcribedOutput.innerHTML += "SPACE <br>";
+		transcribedOutput.innerHTML += '<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"><label class="form-check-label" for="flexCheckChecked"><b>'+ 
+										'SPACE' +
+										'</b></label></div>';
 	}else{
-		transcribedOutput.innerHTML += index.toUpperCase() + " as in " + "<b>" 
-										+ NatoAlphabet[index.toLowerCase()] + "</b>" +"<br>";
+		transcribedOutput.innerHTML +='<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"><label class="form-check-label" for="flexCheckChecked">'+
+										index.toUpperCase() + " as in " + "<b>" + NatoAlphabet[index.toLowerCase()] + '</b></label></div>';
 	}
 	
 }
+
+
